@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List app</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="todo-app">
+            <div class="row">
+                <h2>Todo App</h2>
+            </div>
+            <div class="row row_extra">
+                <input type="text" id="inputbox" placeholder="Add your new to do">
+                <button class="inputbutton" onclick="addTask()" class="input_add"><span>+</span></button>
+            </div>
+            <div class="row alertdiv"><p id="alert">Cant Create Empty task !</p></div>
+            <div class="row">
+                <ul id="list">
+                </ul>
+            </div>
+            <div class="row_extra cleaner">
+                <p>You Have <span id="counter"></span> pending tasks</p>
+                <button class="clearall" onclick="clearall()"><span>Clear all</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
